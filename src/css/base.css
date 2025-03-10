@@ -1,0 +1,25 @@
+:root {
+  --bg-main-color: #030718;
+  --bg-secondary-color: #030718;
+  --accent-color: #6a54ff;
+  --text-main-color: #fff;
+  --button-color: #57e1ff;
+  --green-color: #35ff9e;
+}
+
+body {
+  font-family: 'IBMPlex', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--bg-main-color);
+  color: var(--text-main-color);
+}
+
+* {
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,17 @@
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./fonts.css');
+
+/* Sections style */
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./numbers.css');
+@import url('./transactions.css');
+@import url('./about.css');
+@import url('./tradeblade.css');
+@import url('./tariffs.css');
+@import url('./reviews.css');
+@import url('./contact.css');
+@import url('./footer.css');
