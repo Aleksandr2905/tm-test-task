@@ -2,7 +2,6 @@ import { defineConfig } from 'vite';
 import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
@@ -27,12 +26,12 @@ export default defineConfig(({ command }) => {
             }
             return '[name].js';
           },
-          assetFileNames: assetInfo => {
-            if (assetInfo.name && assetInfo.name.endsWith('.html')) {
-              return '[name].[ext]';
-            }
-            return 'assets/[name]-[hash][extname]';
-          },
+          // assetFileNames: assetInfo => {
+          //   if (assetInfo.name && assetInfo.name.endsWith('.html')) {
+          //     return '[name].[ext]';
+          //   }
+          //   return 'assets/[name]-[hash][extname]';
+          // },
         },
       },
       outDir: '../dist',
@@ -41,21 +40,6 @@ export default defineConfig(({ command }) => {
     plugins: [
       injectHTML(),
       FullReload(['./src/**/**.html']),
-      ViteImageOptimizer({
-        exclude: /^sprite.svg$/,
-        png: {
-          quality: 60,
-        },
-        jpeg: {
-          quality: 60,
-        },
-        jpg: {
-          quality: 60,
-        },
-        webp: {
-          quality: 60,
-        },
-      }),
       SortCss({
         sort: 'mobile-first',
       }),
