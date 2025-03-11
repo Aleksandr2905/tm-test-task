@@ -24,6 +24,10 @@ body {
   color: var(--text-main-color);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   transition: all 0.2s ease-in-out;
 }
