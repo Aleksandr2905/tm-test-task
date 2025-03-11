@@ -67,9 +67,19 @@ html {
   background-color: var(--bg-white-color);
 }
 
+.bg-accent {
+  background-color: var(--accent-color);
+}
+
 .bg-corner-white {
   padding-top: 24px;
   background-image: url(../img/bg-white-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.bg-corner-accent {
+  padding-top: 24px;
+  background-image: url(../img/bg-accent-mobile.svg);
   background-repeat: no-repeat;
 }
 
@@ -94,5 +104,10 @@ html {
   .bg-corner-white {
     padding-top: 60px;
     background-image: url(../img/bg-white-desktop.svg);
+  }
+
+  .bg-corner-accent {
+    padding-top: 60px;
+    background-image: url(../img/bg-accent-desktop.svg);
   }
 }
