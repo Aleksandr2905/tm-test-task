@@ -9,10 +9,9 @@ body,
 
 button {
   padding: 0;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: inherit;
   cursor: pointer;
   color: inherit;
-  outline: rgba(0, 0, 0, 0);
 }
 
 ul,
