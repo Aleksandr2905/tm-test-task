@@ -1,6 +1,7 @@
 :root {
   --bg-main-color: #030718;
   --bg-secondary-color: #030718;
+  --bg-white-color: #fff;
   --accent-color: #6a54ff;
   --text-main-color: #fff;
   --button-color: #57e1ff;
@@ -46,4 +47,43 @@ body {
   background-color: var(--button-bg-secondary-color);
   box-shadow: 0px 0px 4px 0px var(--button-color);
   color: var(--button-color);
+}
+
+.title-section {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+  color: var(--bg-main-color);
+}
+
+.bg-corner-white {
+  padding-top: 24px;
+  background-image: url(../img/bg-white-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.animate-element {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animate-element.animated {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+@media only screen and (min-width: 1440px) {
+  .title-section {
+    font-size: 44px;
+    letter-spacing: -1.76px;
+    text-transform: uppercase;
+  }
+
+  .bg-corner-white {
+    padding-top: 60px;
+    background-image: url(../img/bg-white-desktop.svg);
+  }
 }
