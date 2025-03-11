@@ -4,11 +4,13 @@
   --bg-white-color: #fff;
   --accent-color: #6a54ff;
   --text-main-color: #fff;
+  --text-gray-color: #a5aebc;
   --button-color: #57e1ff;
   --button-bg-secondary-color: rgba(87, 225, 255, 0.2);
   --green-color: #35ff9e;
   --input-bg-color: #201a4f;
   --input-bg-30-color: rgba(32, 26, 79, 0.3);
+  --bg-card-reviews-color: rgba(234, 239, 240, 0.2);
 }
 
 body {
