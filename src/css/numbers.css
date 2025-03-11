@@ -1,7 +1,3 @@
-.numbers__container-bg {
-  background-color: var(--bg-white-color);
-}
-
 .numbers__container {
   display: flex;
   flex-direction: column;

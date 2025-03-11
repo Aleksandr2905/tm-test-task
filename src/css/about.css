@@ -1,1 +1,142 @@
-/** */
+.about {
+  position: relative;
+  padding-bottom: 125px;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 132px;
+}
+
+.about__wrapper-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about__description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  opacity: 0.8;
+  color: var(--bg-main-color);
+}
+
+.about__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+}
+
+.about__form-title {
+  color: var(--text-main-color);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.8px;
+}
+
+.about__wrapper-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about__form-input {
+  width: 100%;
+  padding: 15px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -0.14px;
+  text-transform: uppercase;
+  background-color: var(--input-bg-30-color);
+  color: var(--text-main-color);
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
+  &:focus,
+  &:hover {
+    outline: 1px solid var(--button-color);
+  }
+}
+
+.about__btn {
+  width: 100%;
+  padding: 16px 24px;
+
+  &:hover {
+    background-color: transparent;
+    color: var(--text-main-color);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .about__wrapper-title {
+    gap: 40px;
+  }
+
+  .about__description {
+    width: 413px;
+  }
+
+  .about__container {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 0;
+    padding-top: 56px;
+    padding-bottom: 92px;
+  }
+
+  .about__form {
+    width: 631px;
+    gap: 32px;
+    position: relative;
+    left: 0;
+    right: 0;
+    padding: 32px 64px 40px;
+  }
+
+  .about__form-title {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: -1.12px;
+    color: var(--text-main-color);
+  }
+
+  .about__form-input {
+    padding: 16px 20px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.16px;
+  }
+
+  .about__wrapper-input {
+    position: relative;
+    gap: 0;
+  }
+
+  .about__btn {
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    width: auto;
+    padding: 11px 24px;
+  }
+}

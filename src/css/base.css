@@ -8,6 +8,7 @@
   --button-bg-secondary-color: rgba(87, 225, 255, 0.2);
   --green-color: #35ff9e;
   --input-bg-color: #201a4f;
+  --input-bg-30-color: rgba(32, 26, 79, 0.3);
 }
 
 body {
@@ -56,6 +57,10 @@ body {
   letter-spacing: -1.12px;
   text-transform: uppercase;
   color: var(--bg-main-color);
+}
+
+.bg-white {
+  background-color: var(--bg-white-color);
 }
 
 .bg-corner-white {
