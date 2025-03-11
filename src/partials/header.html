@@ -1,7 +1,7 @@
 <header class="container">
-  <div>
-    <a href="/"
-      ><img
+  <div class="header__container">
+    <a href="/">
+      <img
         src="./img/logo.svg"
         width="107"
         height="52"
@@ -9,5 +9,44 @@
         class="header__logo"
       />
     </a>
+    <button type="button" class="burger" data-mobile-open>
+      <svg width="32" height="32" aria-label="open mobile menu">
+        <use href="./img/sprite.svg#burger" />
+      </svg>
+    </button>
+
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li>
+          <a href="#">цифры</a>
+        </li>
+        <li>
+          <a href="#">сделки онлайн</a>
+        </li>
+        <li>
+          <a href="#">о компании</a>
+        </li>
+        <li>
+          <a href="#">как начать</a>
+        </li>
+        <li>
+          <a href="#">тарифы</a>
+        </li>
+        <li>
+          <a href="#">отзывы</a>
+        </li>
+        <li>
+          <a href="#">faq</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__buttons">
+      <button type="button" class="btn-secondary" data-mobile-close>
+        вход
+      </button>
+      <button type="button" class="btn-main" data-mobile-close>
+        регистрация
+      </button>
+    </div>
   </div>
 </header>
