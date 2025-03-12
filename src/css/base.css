@@ -22,7 +22,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  overflow-x: hidden;
   background-color: var(--bg-main-color);
   color: var(--text-main-color);
 }
