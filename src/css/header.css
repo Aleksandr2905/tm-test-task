@@ -38,7 +38,7 @@
     & > * {
       font-size: 14px;
       font-weight: 500;
-      list-style: 1.21;
+      list-style: 1.2;
       text-transform: uppercase;
       opacity: 0.8;
       color: var(--text-main-color);
