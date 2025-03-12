@@ -1,1 +1,87 @@
-<section><div>TARIFFS</div></section>
+<section>
+  <div class="container tariffs__container">
+    <h2
+      class="title-section tariffs__title animate-element"
+      data-animation="fade-up"
+    >
+      Тарифы
+    </h2>
+
+    <div class="tabs animate-element" data-animation="fade-up" data-delay="200">
+      <button type="button" class="tab active" data-tab="0">СПОТ</button>
+      <button type="button" class="tab" data-tab="1">ФЬЮЧЕРС</button>
+    </div>
+
+    <div
+      class="pricing-cards animate-element"
+      data-animation="fade-up"
+      data-delay="300"
+      id="pricing-cards"
+    >
+      <div class="card standard" id="standard-card">
+        <h2 class="card-title">STANDART</h2>
+
+        <ul class="features">
+          <li class="feature">Ручной трейдинг</li>
+          <li class="feature">
+            Автоматическое или полуавтоматическое копирование сделок
+          </li>
+          <li class="feature">Личный кабинет со статистикой</li>
+          <li class="feature">
+            Среднесрочные сделки с уровнями набора портфеля
+          </li>
+        </ul>
+
+        <div class="price-container">
+          <p class="price">$234</p>
+          <p class="discount">-35%</p>
+          <select class="period-select">
+            <option>12 месяцев</option>
+            <option>6 месяцев</option>
+            <option>3 месяца</option>
+            <option>1 месяц</option>
+          </select>
+        </div>
+
+        <button class="try-button">
+          ПОПРОБОВАТЬ <span class="free-trial">5 дней бесплатно</span>
+        </button>
+      </div>
+
+      <div
+        class="card vip animate-element"
+        data-animation="fade-up"
+        data-delay="400"
+        id="vip-card"
+      >
+        <h2 class="card-title">VIP</h2>
+
+        <ul class="features">
+          <li class="feature">Ручной трейдинг</li>
+          <li class="feature">
+            Автоматическое или полуавтоматическое копирование сделок
+          </li>
+          <li class="feature">Личный кабинет со статистикой</li>
+          <li class="feature">Краткосрочные, среднесрочные и инвест сделки</li>
+          <li class="feature">Доступ в Vip чат с командой</li>
+          <li class="feature">Наш авторский курс по трейдингу</li>
+        </ul>
+
+        <div class="price-container">
+          <p class="price">$585</p>
+          <p class="discount">-35%</p>
+          <select class="period-select">
+            <option>12 месяцев</option>
+            <option>6 месяцев</option>
+            <option>3 месяца</option>
+            <option>1 месяц</option>
+          </select>
+        </div>
+
+        <button class="try-button">
+          ПОПРОБОВАТЬ <span class="free-trial">5 дней бесплатно</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

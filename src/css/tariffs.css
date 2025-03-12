@@ -1,1 +1,229 @@
-/** */
+.tariffs__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 56px;
+  padding-bottom: 44px;
+}
+
+.tariffs__title {
+  color: var(--text-main-color);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  width: 343px;
+  height: 52px;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
+.tabs::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--accent-color);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-weight: 700;
+}
+
+.tab.active {
+  background-color: var(--button-color);
+  color: var(--bg-main-color);
+}
+
+.tab:not(.active) {
+  background-color: transparent;
+  color: var(--button-color);
+  font-weight: 500;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  transition: all 0.5s ease;
+}
+
+.card {
+  flex: 1;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  border: 1px solid var(--accent-color);
+  color: var(--text-main-color);
+}
+
+.standard {
+  background-color: transparent;
+}
+
+.vip {
+  background-color: var(--accent-color);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.8px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+  margin-top: 24px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  position: relative;
+}
+
+.feature::before {
+  content: url(../img/checkmark.svg);
+  padding-right: 10px;
+}
+
+.feature::after {
+  content: url(../img/line.svg);
+  position: absolute;
+  bottom: -5px;
+  left: -16px;
+  right: -16px;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.price {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -1.4px;
+}
+
+.discount {
+  color: var(--green-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+  letter-spacing: -0.72px;
+  margin: 0 0 21px 4px;
+}
+
+.period-select {
+  width: 128px;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--text-main-color);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.period-select:focus {
+  outline: 1px solid var(--button-color);
+}
+
+.period-select option {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.try-button {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  padding: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: uppercase;
+  width: 100%;
+  transition: background-color 0.3s;
+  color: var(--bg-main-color);
+  background-color: var(--button-color);
+  box-shadow: 0px 0px 4px 0px var(--button-color);
+}
+
+.try-button:hover {
+  color: var(--button-color);
+  background-color: transparent;
+}
+
+.free-trial {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  opacity: 0.56;
+  text-transform: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .tariffs__container {
+    max-width: 846px;
+    gap: 40px;
+    padding: 96px 0;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .card-title {
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: -1.28px;
+  }
+
+  .features {
+    margin-top: 56px;
+  }
+
+  .price-container {
+    margin: 40px 0 24px;
+  }
+
+  .feature::after {
+    bottom: -5px;
+    left: -24px;
+    right: -24px;
+  }
+}
